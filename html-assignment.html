@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.js">
+    </script>
+    <title>GridBIZ</title>
+</head>
+<body id="body">
+    <div class="wrapper" id="wrapper">
+         <!-- navigation -->
+        <header class="nav-bar">
+            <div class="profile">
+                <i class="fa-solid fa-user fa-2x"></i>
+            </div>
+            <nav class="middle-bar">
+                <div class="menus">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="setting">
+                <span>LOGIN</span><i class="fa-solid fa-user fa-2x"></i>
+            </div>
+        </header>
+        <!-- top container -->
+        <section class="top-container">
+            <header class="showcase">
+                <h1>Your Web Presence</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quasi soluta libero cupiditate placeat? Explicabo!</p>
+                <a href="#" class="btn" onclick="openPopup()">Click For Modal</a>
+            </header>
+            <div class="top-box top-box-a">
+                <h4>Membership</h4>
+                <p class="price">$199/mo</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+            <div class="top-box top-box-b">
+                <h4>Pro Membership</h4>
+                <p class="price">$299/mo</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </section>
+
+        <!-- Boxes section  -->
+        <section class="boxes">
+            <div class="box">
+                <i class="fa-solid fa-chart-pie fa-4x"></i>
+                <h3>Analytics</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, ex.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-globe fa-4x"></i>
+                <h3>Marketing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, ex.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-cog fa-4x"></i>
+                <h3>Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, ex.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-users fa-4x"></i>
+                <h3>Support</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, ex.</p>
+            </div>
+        </section>
+        <!-- info section  -->
+        <section class="info">
+            <img src="images/bulb.jpg" alt="">
+            <div>
+                <h2>Your Business On The Web</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum minus molestias, tempore doloremque, adipisci aperiam consequatur iure, fugiat magni saepe facilis velit blanditiis necessitatibus qui voluptatibus magnam ex? Eum, ratione.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+        </section>
+        <!-- Protfolio -->
+        <section class="portfolio">
+            <img src="https://source.unsplash.com/random/200x200" alt="">
+            <img src="https://source.unsplash.com/random/201x200" alt="">
+            <img src="https://source.unsplash.com/random/202x200" alt="">
+            <img src="https://source.unsplash.com/random/203x200" alt="">
+            <img src="https://source.unsplash.com/random/204x200" alt="">
+            <img src="https://source.unsplash.com/random/205x200" alt="">
+            <img src="https://source.unsplash.com/random/206x200" alt="">
+            <img src="https://source.unsplash.com/random/207x200" alt="">
+            <img src="https://source.unsplash.com/random/208x200" alt="">
+            <!-- <img src="https://source.unsplash.com/random/209x200" alt=""> -->
+        </section>
+        <!-- footer  -->
+        <footer>
+            <p>Grid &copy 2022</p>
+        </footer>
+         
+    </div>
+    <!------- wrapper ends------ -->
+    <!-- popup modal  -->
+    <div class="popup"  id="popup">
+        <h1>have a nice day</h1>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+<script>
+    let popup= document.getElementById('popup');
+    let wrapper= document.getElementById('wrapper');
+    function openPopup(){
+        popup.classList.add("open-popup");
+        wrapper.classList.add("dim");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+        wrapper.classList.remove("dim");
+    }
+</script>
+</body>
+</html>
