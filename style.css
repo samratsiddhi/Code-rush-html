@@ -128,12 +128,75 @@ nav ul li::after{
 }
 
 nav ul li:hover{
-    color:#fff;
+    color:var(--light);
 }
 
 nav ul li:hover::after{
     top: 50%;
     opacity: 1;
+}
+
+/* left setting */
+
+.action .user-profile{
+    float: right;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.action.user-profile.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action .menu{
+    position: absolute;
+    top:120px;
+    right: -10px;
+    padding:  10px 20px;
+    background : var(--light);
+    min-width: 200px;
+    box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.action .menu.active{
+    top: 120px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.action .menu .h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding : 20px;
+    font-weight: 500;
+    color: var(--dark);
+    line-height: 1.2 rem; 
+}
+
+.action .menu ul li{
+    width: 100%;
+    margin-left: 0;
+    list-style: none;
+    border-top: solid black 1px;
+    padding: 10px ;
+    display:flex;
+    align-items:center;
+    color: var(--dark);
+}
+
+.action .menu ul li:hover{
+    opacity: 1;
+    color: var(--primary);
+    cursor: pointer;
 }
 
 /* top container   */
@@ -308,18 +371,14 @@ footer {
         margin-left: 50%;
         margin-right: 50%;
     }
-    .setting{
-        display: inline-block;
-    }
-    .setting span{
+    .action .user-profile{
         margin-left: 50%;
         margin-right: 50%;
         float: none;
     }
-    .setting svg{
-        margin-left: 50%;
-        margin-right: 50%;
-        float: none;
+
+    .action .menu.active{
+        top: 290px;
     }
 }
 

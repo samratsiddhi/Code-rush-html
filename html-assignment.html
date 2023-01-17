@@ -26,8 +26,22 @@
                     </ul>
                 </div>
             </nav>
-            <div class="setting">
+            <!-- <div class="setting">
                 <span>LOGIN</span><i class="fa-solid fa-user fa-2x"></i>
+            </div> -->
+            <div class="action">
+                <div class="user-profile" onclick="menuToggle();">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="menu">
+                    <h3>Harry Potter</h3>
+                    <ul>
+                        <li>Setting</li>
+                        <li>Help</li>
+                        <li>Edit Profile</li>
+                        <li>Logout</li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- top container -->
@@ -117,6 +131,11 @@
     function closePopup(){
         popup.classList.remove("open-popup");
         wrapper.classList.remove("dim");
+    }
+
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active')
     }
 </script>
 </body>
