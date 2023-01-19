@@ -1,7 +1,8 @@
 /* css variables */
 :root{
-    --primary: #ddd;
+    /* --primary: #ddd; */
     --dark:#333;
+    --primary:#FFA458;
     --light:#fff;
     --shadow: 0 1px 5px rgba(104,104,104,0.8)
 }
@@ -13,9 +14,17 @@ html{
 }
 
 body{
-    background: #ccc;
+    /* background: #ccc; */
+    background: #D2691E;
     margin: 30px 50px;
     line-height: 1.4;
+}
+
+.nav-bar{
+    background: #FFA458;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 .btn{
@@ -45,8 +54,11 @@ img{
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
 }
-.profile svg{
+.profile img{
     align-items: center;
+    height: 80px;
+    width: 80px;
+
 }
 
 .login{
@@ -338,7 +350,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .profile svg{
+    .profile img{
         margin-left: 50%;
         margin-right: 50%;
     }
@@ -349,7 +361,7 @@ footer {
     }
 
     .action .user-profile .menu.active{
-        top:40%;
+        top:50%;
     }
 }
 
@@ -365,7 +377,7 @@ footer {
     }
 
     .action .user-profile .menu.active{
-        top:75%;
+        top:90%;
         font-size: 10px;
     }
 }
